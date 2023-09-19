@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+  </head>
+<body>
+    <header>
+            <a href="#" class="logo">landing page</a>
+            <nav class="navigation">
+              <span class="nav-links"><a href="#">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#priciing">Pricing</a>
+                <a href="#contact">Booking</a></span>
+                
+
+                <span class="header-right">
+                    <a href="signin.html" class="btns">Sign Up</a>
+                    <a href="login.html" class="btns">Login</a>
+                </span>
+
+            </nav>
+            
+    </header>
+
+
+    <div class="gotoTopBtn">
+      <a href="#main"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+
+
+    <section class="main" id="main">
+        <div class="contain">
+            <h4 class="home-saying">LIVE & TRAVEL</h4>
+            <h6>Your room. Your stay</h6>
+            <a href="#book-now" class="main-btn"><span>Book a tour now</span></a>
+            <div class="social-icons">
+                <a href="#" id="li"><i class="fab fa-linkedin"></i></a>
+                <a href="#" id="ig"><i class="fab fa-instagram"></i></a>
+                <a href="#" id="fb"><i class="fab fa-facebook"></i></a>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-title"><h2>About Us</h2> </div>
+
+            <div class="about-container">
+                <div class="about-left ">
+                Explore all tour of the world with us. <br><br>
+    Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Tempore nulla aut vitae porro molestiae nihil autem, fugiat, assumenda. Nesciunt beatae dignissimos numquam suscipit, quas natus vel vero non aliquam, saepe.
+    <br><br>
+    Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Tempore nulla aut vitae porro molestiae nihil autem, fugiat, assumenda. Nesciunt beatae dignissimos numquam suscipit, quas natus vel vero non aliquam, saepe.
+    <br><br>
+    Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Tempore nulla aut vitae porro molestiae nihil autem, fugiat, assumenda. Nesciunt beatae dignissimos numquam suscipit, quas natus vel vero non aliquam, saepe.
+            </div>
+
+            <div class="about-right">
+                <img class="img1" src="backg1.png" alt="">
+                <img class="imgsmall" src="backg2.png" alt="">
+            </div>
+            
+        </div>
+        
+
+    </section>
+    
+
+     <section class="tours-gallery">
+        <div class="section-title"><h2>Tours Gallery</h2> </div>
+
+        <div class="slide-container"style="text-align:center">
+          <div class="slideImg fade">
+             <img src="backg1.png">
+          </div>
+
+            <div class="slideImg fade">
+              <img src="backg2.png" >
+              
+            </div>
+            <div class="slideImg fade">
+              <img src="backg3.png" >
+            </div>
+
+            <div class="slideImg fade">
+              <img src="backg1.png">
+           </div>
+ 
+             <div class="slideImg fade">
+               <img src="backg2.png" >
+               
+             </div>
+             <div class="slideImg fade">
+               <img src="backg3.png" >
+             </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+       </div>
+       <br>
+       <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          
+       </div>
+
+
+    </section> 
+
+
+    <section class="book-room" id="book-now">
+      <div class="section-title">
+        <h2>Book your room</h2>
+      </div>
+
+      <div class="reserve-form" >
+        <div class="reserver-details">
+          <label for="first-name">First Name:</label>
+          <input type="text">
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" name="last-name" id="last-name">
+        </div>
+          <div class="second-details">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address">
+  
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" name="phone-number" id="phone-number" placeholder="000-000-000-000">
+  
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="name@email.com">
+  
+          </div>
+        
+
+          
+        <div class="checks">
+          <label for="check-in-date">Check In:</label>
+          <input type="date" id="check-in-date" name="check-in-date" required>
+      
+          <label for="check-out-date">Check Out:</label>
+          <input type="date" id="check-out-date" name="check-out-date" required>
+        </div>
+  
+        <div class="reservation-counts">
+          <label for="traveller-cnt">Travellers:</label>
+          <select id="travelCnt">
+            <option value="hide">-- Select Travellers Number --</option>
+            <option value="january">1 traveller</option>
+            <option value="february">2 travellers</option>
+            <option value="march">3 travellers</option>
+            <option value="april">4 travellers</option>
+            <option value="may">5 travellers</option>
+          </select>
+        
+          <label for="room-cnt">Room:</label>
+          <select id="roomCnt">
+            <option value="hide">-- Select Rooms Number --</option>
+            <option value="january">1 room</option>
+            <option value="february">2 rooms</option>
+            <option value="march">3 rooms</option>
+          </select>
+        </div>
+
+
+        <div class="payment">
+          <label for="payment">Payment Method</label>
+          <input type="radio" name="payment" id="payment" value="cash">
+          <label for="payment">Cash</label>
+          <input type="radio" name="payment" id="payment" value="card">
+          <label for="payment">Card</label>
+        </div>
+        <div class="check-btn">
+          <input type="submit" value="Check for availability" id="btn-submit">
+        </div>
+        
+        
+      
+      </div>
+      
+    </section>
+
+
+    <section class="services" id="services">
+      <div class="section-title"><h2>what we do</h2></div>
+      
+      <div class="services-container">
+        <h2 id="s-title">Discover Our Services</h2>
+        
+        <div class="cards-container">
+
+          <div class="s-card">
+            <i class="fa-solid fa-location-dot" id="s-icon"></i>
+            <p>Travel Plan</p>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </h4>
+          </div>
+  
+          <div class="s-card">
+            <i class="fa-solid fa-user-doctor" id="s-icon"></i>
+            <p>Doctor on call</p>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </h4>
+          </div>
+  
+          <div class="s-card">
+            <i class="fa-solid fa-utensils" id="s-icon"></i>
+            <p>Catering Service</p>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </h4>
+          </div>
+  
+          <div class="s-card">
+            <i class="fa-solid fa-baby-carriage" id="s-icon"></i>
+            <p>Babysitting</p>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </h4>
+          </div>
+  
+          <div class="s-card">
+            <i class="fa-solid fa-shirt" id="s-icon"></i>
+            <p>Laundry</p>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </h4>
+          </div>
+  
+          <div class="s-card">
+            <i class="fa-regular fa-clock" id="s-icon"></i>
+            <p>Hire Driver</p>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </h4>
+          </div>
+
+        </div>
+        
+      </div>
+      
+    </section>
+
+
+
+    <section class="rooms-types ">
+      <div class="section-title"><h2>rooms types</h2></div>
+      <div class="s-photos">
+        <div class="room-item fade-in" id="odd" style="background-image: url(1.jpg);">
+          <div class="overlay">
+            <div class="content">
+              <h2>Double Room</h2>
+              <h3>199$ <span>/Pernight</span></h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>size:</td>
+                    <td>444</td>
+                  </tr>
+                  <tr>
+                    <td>Capacity:</td>
+                    <td>Max persion 5</td>
+                  </tr>
+                  <tr>
+                    <td>Bed:</td>
+                    <td>King Beds</td>
+                  </tr>
+                  <tr>
+                    <td>Services:</td>
+                    <td>Wifi, Television, Bathroom,...</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#">MORE DETAILS</a>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="room-item" id="odd" style="background-image: url(2.png);">
+          <div class="overlay">
+            <div class="content">
+              <h2>Double Room</h2>
+              <h3>199$ <span>/Pernight</span></h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>size:</td>
+                    <td>444</td>
+                  </tr>
+                  <tr>
+                    <td>Capacity:</td>
+                    <td>Max persion 5</td>
+                  </tr>
+                  <tr>
+                    <td>Bed:</td>
+                    <td>King Beds</td>
+                  </tr>
+                  <tr>
+                    <td>Services:</td>
+                    <td>Wifi, Television, Bathroom,...</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#">MORE DETAILS</a>
+            </div>
+            
+          </div>
+        </div>
+
+
+        <div class="room-item" id="even" style="background-image: url(3.jpg);">
+          <div class="overlay">
+            <div class="content">
+              <h2>Double Room</h2>
+              <h3>199$ <span>/Pernight</span></h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>size:</td>
+                    <td>444</td>
+                  </tr>
+                  <tr>
+                    <td>Capacity:</td>
+                    <td>Max persion 5</td>
+                  </tr>
+                  <tr>
+                    <td>Bed:</td>
+                    <td>King Beds</td>
+                  </tr>
+                  <tr>
+                    <td>Services:</td>
+                    <td>Wifi, Television, Bathroom,...</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#">MORE DETAILS</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="room-item " id="even" style="background-image: url(4.jpg);">
+          <div class="overlay">
+            <div class="content">
+              <h2>Double Room</h2>
+              <h3>199$ <span>/Pernight</span></h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>size:</td>
+                    <td>444</td>
+                  </tr>
+                  <tr>
+                    <td>Capacity:</td>
+                    <td>Max persion 5</td>
+                  </tr>
+                  <tr>
+                    <td>Bed:</td>
+                    <td>King Beds</td>
+                  </tr>
+                  <tr>
+                    <td>Services:</td>
+                    <td>Wifi, Television, Bathroom,...</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#">MORE DETAILS</a>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div> 
+      
+      </div>
+      
+      
+      
+    </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="row">
+        
+        <div class="footer-col">
+
+          <h3>Landing Page</h3>
+          <ul>
+            <li><a href="#">Our Services us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Rooms</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="footer-col">
+
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Payment options</a></li>
+            <li><a href="#about">About us</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="footer-col">
+
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" id="li-footer"><i class="fab fa-linkedin"></i></a>
+            <a href="#" id="ig-footer"><i class="fab fa-instagram"></i></a>
+            <a href="#" id="fb-footer"><i class="fab fa-facebook"></i></a>
+            <a href="#" id="tw-footer"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col" id="footer-newsletter">
+          <h3>Our Newsletter</h3>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+  
+
+ScrollReveal({
+    reset: true,
+    distance:'100px',
+    duration:1000,
+    delay:100
+});
+ScrollReveal().reveal('.room-item, .s-card', {delay:500, origin:'bottom', interval:200});
+ScrollReveal().reveal('.reserver-details, .second-details, .checks, .reservation-counts, .payment, .check-btn, .about-container, #s-title', {delay:500, origin:'left', interval:200});
+ScrollReveal().reveal('.social-icons', {delay:900, origin:'left', interval:600});
+
+
+
+</script>
+</body>
+</html>

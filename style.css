@@ -1,0 +1,54 @@
+body{
+    background: #000;
+}
+.container{
+    margin: 0px;
+}
+.screen{
+    width: 24rem;
+    height: 4rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 2px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.calc-container{
+    width: 27rem;
+    border-radius: 20px;
+    background-color: rgb(69, 43, 43);
+    padding: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 25rem;
+    top: 2rem;
+}
+
+.numberButton, .clacButton, .clearButton, .addNumberButton, .pasteMemoryButton, .equalButton{
+    height: 3rem;
+    width: 5.7rem;
+    margin: 10px 4px;
+    border: none !important;
+    color: #fff;
+    font-size: 1.4rem;
+    background: #730707;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    
+}
+.row button:hover{
+    cursor: pointer;
+    background: #aa2020;
+    transform: scale(1.1, 1.1);
+    
+}
+.equalButton{
+    height: 3rem;
+    width: 24rem;
+    margin: 10px 4px;
+    position: relative;
+    left: 0.5rem;
+    border: none !important;
+}

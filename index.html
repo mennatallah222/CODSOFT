@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="container text-center">
+        <div class="calc-container">
+            <div class="row">
+                <form name="calculator">
+                    <input type="text" id="screen" class=" screen text-right" value="0" readonly>
+                </form>
+            </div>
+
+            <div class="row">
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(7)">7</button>
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(8)">8</button>
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(9)">9</button>
+                <button id="clacButton" type="button" class="btn btn-outline-success clacButton" onclick="calcButtonPress('+')">+</button>
+            </div>
+
+            <div class="row">
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(4)">4</button>
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(5)">5</button>
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(6)">6</button>
+                <button id="clacButton" type="button" class="btn btn-outline-success clacButton" onclick="calcButtonPress('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(1)">1</button>
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(2)">2</button>
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress(3)">3</button>
+                <button id="clacButton" type="button" class="btn btn-outline-success clacButton" onclick="calcButtonPress('*')">*</button>
+            </div>
+
+
+
+            <div class="row">
+                <button id="clearButton" type="button" class="btn btn-outline-primary clearButton" onclick="clearButtonPress()">AC</button>
+                <button id="numberButton" type="button" class="btn btn-outline-danger numberButton" onclick="numberButtonPress(0)">0</button>
+                <button id="numberButton" type="button" class="btn btn-outline-primary numberButton" onclick="numberButtonPress('.')">.</button>
+                <button id="clacButton" type="button" class="btn btn-outline-success clacButton" onclick="calcButtonPress('/')">/</button>
+            </div>
+
+            <div class="row">
+                <button id="equalButton" type="button" class="btn btn-outline-info equalButton" onclick="equalButtonPress()">=</button>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
